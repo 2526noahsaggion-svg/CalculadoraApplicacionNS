@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CalculadoraApplicacionNS</string>
+    <string name="title">B &amp; O BMI CALCULATOR</string>
+    <string name="subtitleSimbolMale">MALE</string>
+    <string name="subtitleSimbolFemale">FEMALE</string>
+    <string name="titleHeight">HEIGHT</string>
+    <string name="totalInches">0</string>
+    <string name="textInches">inches</string>
+    <string name="titleWeight">WEIGHT</string>
+    <string name="titleAge">AGE</string>
+    <string name="numWeight">170</string>
+    <string name="numAge">18</string>
+    <string name="simbolFurther">+</string>
+    <string name="simbolLess">-</string>
+    <string name="textCalculate">CALCULATE</string>
+    <string name="titleResult">BMI Results</string>
+    <string name="subtitleResult">Your Results</string>
+    <string name="textCardViewTitle">NORMAL</string>
+    <string name="resultText">22.43</string>
+    <string name="textReCalculate">RE-CALCULATE</string>
+    <string name="textCardViewSubtitle">Normal</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#0A0E21</color>
+    <color name="cardBackground">#111328</color>
+    <color name="secondCardBackground">#1D1E33</color>
+    <color name="titleColor">#8E8F99</color>
+    <color name="colorBarraAndCalculate">#512DA8</color>
+    <color name="backgroundColorShadow">#090d1f</color>
+    <color name="colorBtn">#4c4f5e</color>
+    <color name="cardBackgroundSelect">#1D2040</color>
+    <color name="resultUnderWeight">#FFC107</color>
+    <color name="resultNormal">#24d876</color>
+    <color name="resultOverWeight">#FF9800</color>
+    <color name="resultObesity">#F44336</color>
+</resources>
