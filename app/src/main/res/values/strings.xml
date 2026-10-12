@@ -19,4 +19,10 @@
     <string name="resultText">22.43</string>
     <string name="textReCalculate">RE-CALCULATE</string>
     <string name="textCardViewSubtitle">Normal</string>
+    <string name="DescriptionImageMale">Icono de género masculino</string>
+    <string name="DescriptionImageFemale">Icono de género femenino</string>
+    <string name="descriptionBtnFurtherAge">Augmentar peso</string>
+    <string name="descriptionBtnLessAge">Disminuir peso</string>
+    <string name="descriptionBtnFurtherWeight">Augmentar altura</string>
+    <string name="descriptionBtnLessWeight">Disminuir altura</string>
 </resources>

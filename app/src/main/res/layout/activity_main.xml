@@ -30,7 +30,6 @@
             android:gravity="center"
             android:textSize="20sp"
             app:layout_constraintTop_toTopOf="parent"
-
             />
     </LinearLayout>
     <com.google.android.material.card.MaterialCardView
@@ -48,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables"
             >
         <ImageView
             android:id="@+id/imageMale"
@@ -55,7 +55,8 @@
             android:layout_height="100dp"
             android:src="@drawable/baseline_male_24"
             android:layout_marginTop="15dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:contentDescription="@string/DescriptionImageMale"/>
 
         <TextView
             android:id="@+id/textSimbolMale"
@@ -83,14 +84,16 @@
             android:id="@+id/layoutFemale"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
             <ImageView
                 android:id="@+id/imageFemale"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:src="@drawable/baseline_female_24"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/DescriptionImageFemale"/>
             <TextView
                 android:id="@+id/textSimbolFemale"
                 android:layout_width="match_parent"
@@ -134,10 +137,12 @@
             <LinearLayout
                 android:id="@+id/layoutInches"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginBottom="5dp">
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:importantForAccessibility="yes">
                 <TextView
                     android:id="@+id/textViewTotalInches"
                     android:layout_width="wrap_content"
@@ -232,7 +237,9 @@
                     android:padding="0sp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:includeFontPadding="false">
+                    android:includeFontPadding="false"
+                    android:contentDescription="@string/descriptionBtnLessWeight"
+                    style="?android:attr/buttonBarButtonStyle">
                 </Button>
                 <Button
                     android:id="@+id/btnFurtherWeight"
@@ -248,7 +255,9 @@
                     android:padding="0sp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:includeFontPadding="false">
+                    android:includeFontPadding="false"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:contentDescription="@string/descriptionBtnFurtherWeight">
                 </Button>
 
             </LinearLayout>
@@ -312,11 +321,13 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginStart="15dp"
                     android:backgroundTint="@color/colorBtn"
-                    app:cornerRadius="28dp"
+                    app:cornerRadius="30dp"
                     android:padding="0sp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:includeFontPadding="false">
+                    android:includeFontPadding="false"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:contentDescription="@string/descriptionBtnLessAge">
                 </Button>
                 <Button
                     android:id="@+id/btnFurtherAge"
@@ -332,9 +343,10 @@
                     android:padding="0sp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:includeFontPadding="false">
+                    android:includeFontPadding="false"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:contentDescription="@string/descriptionBtnFurtherAge">
                 </Button>
-
             </LinearLayout>
 
         </LinearLayout>
@@ -357,7 +369,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textCalculate"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textColor="@color/white"
             android:fontFamily="sans-serif-black"
             android:textStyle="bold"
